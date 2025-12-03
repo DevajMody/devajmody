@@ -95,43 +95,183 @@
     <section class="projects">
         <h2>projects</h2>
 
-        <div class="project-card">
-            <p><a href="#">Endo Automation</a> is an AI-powered farm automation startup winning Sarah Ramsey Strong Fund recognition. Built multi-agent system with specialized agents (crop advisor, irrigation controller, anomaly detector) processing real-time sensor telemetry. RAG pipeline indexing 50K+ agricultural documents.</p>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
+            <button class="filter-btn" data-filter="hardware">Hardware</button>
+            <button class="filter-btn" data-filter="web3">Web3</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+
+        <div class="project-card" data-categories="ai hardware">
+            <p><a href="#">Endo Automation</a> is an AI-powered farm automation startup winning Sarah Ramsey Strong Fund recognition. Built multi-agent system with specialized agents processing real-time sensor telemetry. RAG pipeline indexing 50K+ agricultural documents.</p>
             <div class="tech-tags">
-                <span class="tag">Python</span>
                 <span class="tag">LangGraph</span>
                 <span class="tag">Pinecone</span>
+                <span class="tag">Go</span>
+                <span class="tag">Kubernetes</span>
             </div>
         </div>
 
-        <div class="project-card">
-            <p><a href="#">Talos Robotics</a> is a vision-based tracking platform for robotic arm control, implementing vision transformers for real-time object detection and pose estimation. Built simulation environment for robotic arm testing, enabling virtual validation before physical deployment.</p>
+        <div class="project-card" data-categories="robotics ai">
+            <p><a href="#">Talos Robotics</a> is a vision-based tracking platform for robotic arm control using vision transformers for real-time object detection and pose estimation. Built ROS/Gazebo simulation with React telemetry interface.</p>
             <div class="tech-tags">
-                <span class="tag">Python</span>
                 <span class="tag">PyTorch</span>
                 <span class="tag">ROS</span>
                 <span class="tag">Gazebo</span>
+                <span class="tag">React</span>
             </div>
         </div>
 
-        <div class="project-card">
-            <p><a href="#">Deep Agent System</a> features deep agents with planning and long-term memory. Implemented tool-use framework with function calling for web search, code execution, and document retrieval. Built evaluation framework measuring task completion across 500+ test scenarios.</p>
+        <div class="project-card" data-categories="ai">
+            <p><a href="#">Deep Agent System</a> features LangGraph agents with planning and long-term memory. Tool-use framework with function calling for web search, code execution, and document retrieval. Evaluation across 500+ test scenarios.</p>
             <div class="tech-tags">
-                <span class="tag">Python</span>
                 <span class="tag">LangGraph</span>
-                <span class="tag">Supabase</span>
                 <span class="tag">Claude API</span>
+                <span class="tag">Supabase</span>
             </div>
         </div>
 
-        <div class="project-card">
-            <p><a href="#">LLaMA Implementation</a> is LLaMA 2 architecture from scratch including RMSNorm, rotary embeddings, and grouped-query attention. Trained with gradient checkpointing and mixed precision for 3x memory efficiency. Optimized inference with KV caching and flash attention.</p>
+        <div class="project-card" data-categories="ai">
+            <p><a href="#">LLaMA From Scratch</a> is LLaMA 2 architecture implemented in PyTorch including RMSNorm, rotary embeddings, and grouped-query attention. 3x memory efficiency with gradient checkpointing. KV caching and flash attention for inference.</p>
+            <div class="tech-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">Transformers</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="ai">
+            <p><a href="#">LoRA/QLoRA Fine-tuning</a> enables parameter-efficient fine-tuning of LLaMA for domain-specific tasks, reducing compute 90%. QLoRA with 4-bit quantization runs 7B models on consumer GPUs (24GB VRAM).</p>
+            <div class="tech-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">LoRA</span>
+                <span class="tag">Quantization</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="ai">
+            <p><a href="#">Vision-Language Pipeline</a> integrates VLMs for multi-modal understanding. OCR + LLM pipeline extracts structured data from 10K+ scanned forms at 95% accuracy. Fine-tuned CLIP embeddings improve retrieval 40%.</p>
+            <div class="tech-tags">
+                <span class="tag">CLIP</span>
+                <span class="tag">OCR</span>
+                <span class="tag">VLMs</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="ai hardware">
+            <p><a href="#">Agricultural RAG</a> is a retrieval-augmented generation pipeline fine-tuned on 100K agricultural documents, serving 5K+ queries/month at 92% accuracy with multi-step agent workflows for crop diagnostics.</p>
+            <div class="tech-tags">
+                <span class="tag">LLaMA</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">LangChain</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="ai hardware">
+            <p><a href="#">RL Nutrient Controller</a> is a custom actor-critic reinforcement learning agent for nutrient dosing, achieving target EC/pH 60% faster than PID controllers, saving $2K per installation.</p>
+            <div class="tech-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">RL</span>
+                <span class="tag">Embedded</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="web3 backend">
+            <p><a href="#">Algorithmic Trading Platform</a> enables users to design, configure, and backtest HFT strategies. Backtesting engine processes 10M+ historical trades with sub-second simulation times across multiple exchanges.</p>
             <div class="tech-tags">
                 <span class="tag">Python</span>
-                <span class="tag">PyTorch</span>
+                <span class="tag">Solidity</span>
+                <span class="tag">Web3.py</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="web3">
+            <p><a href="#">DeFi Smart Contracts</a> are Solidity contracts for automated trade execution and profit-sharing deployed on Ethereum and BSC with $500K+ TVL. Integrated with Uniswap and PancakeSwap.</p>
+            <div class="tech-tags">
+                <span class="tag">Solidity</span>
+                <span class="tag">Ethereum</span>
+                <span class="tag">BSC</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="web3 backend">
+            <p><a href="#">Real-Time Market Data Pipeline</a> aggregates prices from 20+ CEX/DEX sources, handling 50K events/second with less than 10ms latency for live trading decisions.</p>
+            <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Streaming</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="backend">
+            <p><a href="#">AdTech Platform</a> serves 100K ads/second at less than 5ms p99 latency to 5M+ MAUs. Aerospike cluster with cross-DC replication achieving 99.99% uptime, increasing CTR 25% and revenue $3M annually.</p>
+            <div class="tech-tags">
+                <span class="tag">Go</span>
+                <span class="tag">Aerospike</span>
+                <span class="tag">Kafka</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="backend ai">
+            <p><a href="#">ML Feature Store</a> reduces model inference latency 85% (50s to 6s) for real-time pricing decisions. Processes 500M events/month from 7M+ MAUs enabling 8% conversion rate improvement.</p>
+            <div class="tech-tags">
+                <span class="tag">BigQuery</span>
+                <span class="tag">Bigtable</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="hardware backend">
+            <p><a href="#">IoT Event Infrastructure</a> is event-driven architecture handling 1K concurrent IoT connections at less than 200ms p99 latency. Data ingestion pipeline processes 600K sensor readings daily.</p>
+            <div class="tech-tags">
+                <span class="tag">Go</span>
+                <span class="tag">MQTT</span>
+                <span class="tag">InfluxDB</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="hardware">
+            <p><a href="#">Hardware Abstraction Layer</a> supports 15+ sensor types (UART/I2C/SPI) and industrial PLCs via Modbus RTU over RS485, reducing integration time 70% across deployments.</p>
+            <div class="tech-tags">
+                <span class="tag">Modbus</span>
+                <span class="tag">RS485</span>
+                <span class="tag">I2C/SPI</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="hardware">
+            <p><a href="#">Real-Time Control Systems</a> implements control loops with 10ms response time for irrigation and dosing, maintaining 99.9% uptime. Kalman filtering for multi-sensor fusion improves stability 3x.</p>
+            <div class="tech-tags">
+                <span class="tag">Go</span>
+                <span class="tag">Embedded</span>
+                <span class="tag">Kalman</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-categories="backend">
+            <p><a href="#">Self-Service DevOps Platform</a> reduces provisioning time from 2 hours to 3 minutes for 20+ teams. Infrastructure as code with automated CI/CD pipelines.</p>
+            <div class="tech-tags">
+                <span class="tag">Terraform</span>
+                <span class="tag">GitHub Actions</span>
             </div>
         </div>
     </section>
+
+    <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            document.querySelectorAll('.project-card').forEach(card => {
+                if (filter === 'all' || card.dataset.categories.includes(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
 
     <!-- Writing Section -->
     <section class="writing">
