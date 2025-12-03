@@ -175,38 +175,35 @@ hr {
 }
 
 .project-card {
-    overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-.project-card img {
-    float: left;
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.project-content {
-    overflow: hidden;
-}
-
-.project-content h3 {
+.project-card h3 {
     font-size: 17px;
-    font-weight: 400;
-    margin: 0;
-    display: inline;
+    font-weight: 600;
+    margin: 0 0 6px 0;
 }
 
-.project-content p {
+.project-card p {
     margin: 0;
-    display: inline;
+    color: #333;
 }
 
-.clear {
-    clear: both;
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    background-color: #f0f0f0;
+    border-radius: 3px;
 }
 
 /* Writing & Talks */
@@ -327,8 +324,4 @@ footer {
         height: 36px;
     }
 
-    .project-card img {
-        width: 60px;
-        height: 60px;
-    }
 }
