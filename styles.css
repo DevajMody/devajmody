@@ -152,8 +152,8 @@ hr {
 }
 
 .company-logo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 56px;
+    max-height: 56px;
     border-radius: 5px;
     object-fit: contain;
 }
@@ -308,8 +308,8 @@ footer {
     .company-logo {
         display: inline;
         margin-left: 10px;
-        max-width: 32px;
-        max-height: 32px;
+        max-width: 24px;
+        max-height: 24px;
         vertical-align: middle;
         border-radius: 3px;
     }
