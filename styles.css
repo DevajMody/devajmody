@@ -158,6 +158,19 @@ hr {
     object-fit: contain;
 }
 
+.timeline-logo-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .timeline-content {
     padding-left: 20px;
     padding-bottom: 20px;
@@ -169,51 +182,49 @@ hr {
     margin: 0;
 }
 
-/* Projects Section */
-.projects {
-    margin: 0;
+/* Timeline Projects - Inline under each experience */
+.timeline-projects {
+    margin-top: 14px;
+    padding-left: 0;
+    border-left: 2px solid #eee;
+    margin-left: 2px;
 }
 
-.filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
+.timeline-project {
+    padding: 8px 0 8px 14px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
 }
 
-.filter-btn {
-    padding: 6px 14px;
-    font-size: 14px;
-    font-family: inherit;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.15s ease;
+.timeline-project:last-child {
+    border-bottom: none;
 }
 
-.filter-btn:hover {
-    border-color: #999;
+.timeline-project strong {
+    color: #000;
 }
 
-.filter-btn.active {
-    background: #000;
-    color: #fff;
-    border-color: #000;
+/* Featured project gets slightly more visual weight */
+.timeline-project.featured {
+    padding: 12px 0 12px 14px;
+    border-left: 3px solid #000;
+    margin-left: -3px;
+    font-size: 15px;
+    line-height: 22px;
 }
 
-.project-card {
-    margin-bottom: 20px;
+.timeline-project.featured strong {
+    font-size: 16px;
 }
 
-.project-card p {
-    margin: 0 0 6px 0;
-}
-
+/* Tech Tags */
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    margin-top: 6px;
 }
 
 .tag {
@@ -226,15 +237,60 @@ hr {
     border-radius: 3px;
 }
 
-/* Writing & Talks */
-.writing,
-.talks {
+/* Other Projects Section */
+.other-projects {
     margin: 0;
 }
 
-.placeholder-text {
-    color: #888;
-    font-style: italic;
+.section-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px 0;
+}
+
+.archive-list {
+    border-left: 2px solid #eee;
+    margin-left: 2px;
+}
+
+.archive-item {
+    padding: 8px 0 8px 14px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #333;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.archive-item:last-child {
+    border-bottom: none;
+}
+
+.archive-item strong {
+    color: #000;
+}
+
+/* Tech Stack Section */
+.tech-stack {
+    margin: 0;
+}
+
+.stack-row {
+    font-size: 15px;
+    line-height: 28px;
+    color: #333;
+}
+
+.stack-label {
+    display: inline-block;
+    width: 140px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 /* Footer */
@@ -314,11 +370,51 @@ footer {
         border-radius: 3px;
     }
 
+    .timeline-logo-placeholder {
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
     .timeline-content {
         display: block;
         padding-left: 0;
         padding-top: 10px;
         padding-bottom: 0;
+    }
+
+    .timeline-projects {
+        margin-top: 10px;
+    }
+
+    .timeline-project {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .timeline-project.featured {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .archive-item {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .stack-label {
+        display: block;
+        width: auto;
+        margin-bottom: 2px;
+    }
+
+    .stack-row {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -344,4 +440,23 @@ footer {
         height: 36px;
     }
 
+    .timeline-project {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .timeline-project.featured {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 1px 6px;
+    }
+
+    .stack-row {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }

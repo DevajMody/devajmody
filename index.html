@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Devaj Mody - Backend & AI Engineer specializing in distributed systems, machine learning, and robotics">
+    <meta name="description" content="Devaj Mody - Backend & AI Engineer specializing in distributed systems, LLMs, IoT, and robotics">
     <meta name="author" content="Devaj Mody">
     <meta property="og:title" content="Devaj Mody - Backend & AI Engineer">
-    <meta property="og:description" content="Backend & AI engineer building intelligent systems. 5+ years experience in distributed systems, ML infrastructure, and robotics.">
+    <meta property="og:description" content="Backend & AI engineer building intelligent systems. 5+ years experience in distributed systems, LLM training, IoT, and robotics.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devajmody.com">
     <title>Devaj Mody</title>
@@ -36,10 +36,55 @@
         </div>
     </header>
 
+    <!-- Bio Section -->
+    <section class="bio">
+        <h2>bio</h2>
+        <p>I'm a backend and AI engineer with 5+ years building production systems.
+        Graduating April 2026 with my MS in Software Engineering from RIT &mdash;
+        currently training LLMs, building multi-agent systems, and working on
+        computer vision for robotics. Previously led engineering at PhyFarm
+        (AI-powered farm automation across 500+ farms), built ML infrastructure
+        at Purplle (7M+ MAUs), and scaled AdTech at BookMyShow (5M+ MAUs).</p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <h2>stack</h2>
+        <div class="stack-row"><span class="stack-label">Agentic Coding</span> Claude Code · Cursor</div>
+        <div class="stack-row"><span class="stack-label">AI & ML</span> LangGraph · PyTorch · Unsloth · RAG · Pinecone · Claude API</div>
+        <div class="stack-row"><span class="stack-label">Languages</span> Python · Go · JavaScript</div>
+        <div class="stack-row"><span class="stack-label">Infrastructure</span> Kubernetes · Docker · AWS · GCP · Kafka · Terraform</div>
+        <div class="stack-row"><span class="stack-label">Data</span> BigQuery · Bigtable · InfluxDB · PostgreSQL · MongoDB · Redis</div>
+        <div class="stack-row"><span class="stack-label">Hardware</span> PLC · Modbus/RS485 · I2C/SPI · MQTT · ROS</div>
+    </section>
+
     <hr>
 
-    <!-- Experience Timeline -->
+    <!-- Experience + Projects Timeline -->
     <section class="experience">
+
+        <!-- Wallflower Merchandise -->
+        <div class="timeline-item">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-line">
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-logo-placeholder">WF</div>
+            <div class="timeline-content">
+                <p>Building an image generation automation pipeline at <strong>Wallflower Merchandise</strong>.
+                Fine-tuning Flux models using LoRA and QLoRA for targeted product image modifications. Working with vision-language models and CLIP for multi-modal understanding.</p>
+                <div class="tech-tags">
+                    <span class="tag">LoRA</span>
+                    <span class="tag">QLoRA</span>
+                    <span class="tag">Flux</span>
+                    <span class="tag">CLIP</span>
+                    <span class="tag">VLMs</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIT -->
         <div class="timeline-item">
             <div class="timeline-year">2024 -</div>
             <div class="timeline-line">
@@ -47,12 +92,33 @@
             </div>
             <img src="assets/logos/rit.png" alt="RIT" class="company-logo">
             <div class="timeline-content">
-                <p>Pursuing my <strong>MS in Software Engineering</strong> at <a href="https://www.rit.edu/">Rochester Institute of Technology</a>.<br>
-                Coursework focuses on training and fine-tuning LLMs, exploring neural network architectures, reading about interpretability, VLAs, and agent AI.<br>
-                Working on the <a href="#">Talos Robotics</a> project with vision transformers and ROS/Gazebo simulation.</p>
+                <p>Pursuing my <strong>MS in Software Engineering</strong> at <a href="https://www.rit.edu/">Rochester Institute of Technology</a>.
+                Coursework focuses on training and fine-tuning LLMs, neural network architectures, interpretability, VLAs, and agent AI.</p>
+                <div class="timeline-projects">
+                    <div class="timeline-project featured">
+                        <strong>Glaze Chemistry LLM</strong> &mdash; Trained Qwen3-4B with GRPO and SFT using Unsloth on 6,153 ceramic glaze recipes. Iterated reward function through 4 versions, preventing reward hacking with synonym resolution and 100% validation gating. Built chemistry-based evaluation automating reward signals without human labels.
+                        <div class="tech-tags">
+                            <span class="tag">Unsloth</span>
+                            <span class="tag">Qwen</span>
+                            <span class="tag">GRPO</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">RL</span>
+                        </div>
+                    </div>
+                    <div class="timeline-project">
+                        <strong>Endo Automation</strong> &mdash; AI-powered farm startup. LangGraph multi-agent system with RAG pipeline indexing 50K+ docs. Deployed on AWS/Kubernetes with 99.9% uptime. Won Sarah Ramsey Strong Fund recognition.
+                        <div class="tech-tags">
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">Pinecone</span>
+                            <span class="tag">Go</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- PhyFarm -->
         <div class="timeline-item">
             <div class="timeline-year">2022 - 2024</div>
             <div class="timeline-line">
@@ -60,12 +126,32 @@
             </div>
             <img src="assets/logos/phyfarm.png" alt="PhyFarm" class="company-logo">
             <div class="timeline-content">
-                <p>Led a 5-engineer team at <a href="#"><strong>PhyFarm</strong></a> shipping AI-powered farm automation to 500+ farms.<br>
-                Built a custom RL agent in PyTorch for nutrient dosing, 60% faster than PID controllers.<br>
-                Developed an LLM fine-tuned on 100K agricultural documents for crop diagnostics.</p>
+                <p>Led a 5-engineer team at <a href="#"><strong>PhyFarm</strong></a> shipping AI-powered farm automation to 500+ farms.
+                Built RAG pipeline on 100K agricultural documents for crop diagnostics serving 5K+ queries/month.</p>
+                <div class="timeline-projects">
+                    <div class="timeline-project">
+                        <strong>RL Nutrient Controller</strong> &mdash; Custom actor-critic RL agent for nutrient dosing, achieving target EC/pH 60% faster than PID controllers, saving $2K per installation.
+                        <div class="tech-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">RL</span>
+                            <span class="tag">Embedded</span>
+                        </div>
+                    </div>
+                    <div class="timeline-project">
+                        <strong>IoT &amp; Embedded Platform</strong> &mdash; Event-driven system with Go &amp; MQTT handling 1K concurrent connections at &lt;200ms p99. 15+ sensor types (UART/I2C/SPI), industrial PLCs via Modbus RTU. Kalman filtering for sensor fusion, 10ms control loops at 99.9% uptime.
+                        <div class="tech-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">InfluxDB</span>
+                            <span class="tag">Modbus</span>
+                            <span class="tag">Embedded</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Purplle -->
         <div class="timeline-item">
             <div class="timeline-year">2021 - 2022</div>
             <div class="timeline-line">
@@ -73,12 +159,34 @@
             </div>
             <img src="assets/logos/purplle.png" alt="Purplle" class="company-logo">
             <div class="timeline-content">
-                <p>Built data pipelines at <a href="https://www.purplle.com/"><strong>Purplle</strong></a> processing 500M events/month from 7M+ MAUs.<br>
-                Feature store with BigQuery and Bigtable for user profiles, reducing inference latency 85%.<br>
-                Migrated monolithic .NET services to Go microservices, cutting cloud costs $15K/month.</p>
+                <p>Built data pipelines at <a href="https://www.purplle.com/"><strong>Purplle</strong></a> processing 500M events/month from 7M+ MAUs.</p>
+                <div class="timeline-projects">
+                    <div class="timeline-project">
+                        <strong>ML Feature Store</strong> &mdash; BigQuery &amp; Bigtable feature store reducing inference latency 85% (50s to 6s) for real-time pricing, enabling 8% conversion rate improvement.
+                        <div class="tech-tags">
+                            <span class="tag">BigQuery</span>
+                            <span class="tag">Bigtable</span>
+                        </div>
+                    </div>
+                    <div class="timeline-project">
+                        <strong>Go Migration</strong> &mdash; Migrated .NET monolith to Go microservices, cutting cloud costs $15K/month (30% memory, 25% CPU reduction).
+                        <div class="tech-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="timeline-project">
+                        <strong>Self-Service DevOps</strong> &mdash; Terraform + GitHub Actions platform reducing provisioning from 2 hours to 3 minutes for 20+ teams.
+                        <div class="tech-tags">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- BookMyShow -->
         <div class="timeline-item">
             <div class="timeline-year">2019 - 2021</div>
             <div class="timeline-line">
@@ -86,207 +194,94 @@
             </div>
             <img src="assets/logos/bookmyshow.png" alt="BookMyShow" class="company-logo">
             <div class="timeline-content">
-                <p>Architected the AdTech platform at <a href="https://www.bookmyshow.com/"><strong>BookMyShow</strong></a> serving 100K ads/second at &lt;5ms p99 latency to 5M+ MAUs.<br>
-                Deployed Aerospike cluster with cross-DC replication achieving 99.99% uptime.<br>
-                Built priority queue system with Kafka and NodeJS for customer support, reducing response time 80%.</p>
+                <p>Architected the AdTech platform at <a href="https://www.bookmyshow.com/"><strong>BookMyShow</strong></a> serving 5M+ MAUs.
+                Led migration from PHP monolith to Go microservices, improving throughput 3x.</p>
+                <div class="timeline-projects">
+                    <div class="timeline-project">
+                        <strong>AdTech Platform</strong> &mdash; 100K ads/sec at &lt;5ms p99 latency. Aerospike cluster with cross-DC replication achieving 99.99% uptime. CTR +25%, revenue $3M annually.
+                        <div class="tech-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">Aerospike</span>
+                            <span class="tag">Kafka</span>
+                        </div>
+                    </div>
+                    <div class="timeline-project">
+                        <strong>Priority Queue System</strong> &mdash; Kafka + NodeJS for customer support, reducing response time 80% (50min to 10min) for urgent requests.
+                        <div class="tech-tags">
+                            <span class="tag">Kafka</span>
+                            <span class="tag">NodeJS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
-    <!-- Bio Section -->
-    <section class="bio">
-        <h2>bio</h2>
-        <p>I'm a backend and AI engineer building scalable and intelligent systems.<br>
-        Currently pursuing my MS in Software Engineering at RIT, working on robotics and AI agents.<br>
-        Previously led engineering at PhyFarm, built ML infrastructure at Purplle, and scaled AdTech at BookMyShow.</p>
-    </section>
+    <!-- Other Projects -->
+    <section class="other-projects">
+        <h2>other projects</h2>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2>projects</h2>
-
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="ai">AI</button>
-            <button class="filter-btn" data-filter="robotics">Robotics</button>
-            <button class="filter-btn" data-filter="hardware">Hardware</button>
-            <button class="filter-btn" data-filter="web3">Web3</button>
-            <button class="filter-btn" data-filter="backend">Backend</button>
-        </div>
-
-        <div class="project-card" data-categories="ai hardware">
-            <p><a href="#">Endo Automation</a> is an AI-powered farm automation startup that won Sarah Ramsey Strong Fund recognition. Built multi-agent system with specialized agents processing real-time sensor telemetry and RAG pipeline indexing 50K+ agricultural documents.</p>
-            <div class="tech-tags">
-                <span class="tag">LangGraph</span>
-                <span class="tag">Pinecone</span>
-                <span class="tag">Go</span>
-                <span class="tag">Kubernetes</span>
+        <p class="section-subtitle">AI &amp; Research</p>
+        <div class="archive-list">
+            <div class="archive-item">
+                <strong>Deep Agent System</strong> &mdash; LangGraph agents with planning, long-term memory, and tool-use via Claude API. Evaluated across 500+ test scenarios.
+                <div class="tech-tags">
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">Claude API</span>
+                    <span class="tag">Supabase</span>
+                </div>
+            </div>
+            <div class="archive-item">
+                <strong>Talos Robotics</strong> &mdash; Vision transformers for robotic arm control with real-time object detection. Built ROS/Gazebo simulation and React telemetry interface.
+                <div class="tech-tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">ROS</span>
+                    <span class="tag">Gazebo</span>
+                </div>
+            </div>
+            <div class="archive-item">
+                <strong>LLaMA From Scratch</strong> &mdash; Full LLaMA 2 architecture in PyTorch: RMSNorm, rotary embeddings, grouped-query attention. 3x memory efficiency with gradient checkpointing.
+                <div class="tech-tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Transformers</span>
+                </div>
+            </div>
+            <div class="archive-item">
+                <strong>Agricultural RAG</strong> &mdash; LLaMA + Ollama retrieval pipeline on 100K agricultural documents, serving 5K+ queries/month at 92% accuracy.
+                <div class="tech-tags">
+                    <span class="tag">LLaMA</span>
+                    <span class="tag">Ollama</span>
+                    <span class="tag">LangChain</span>
+                </div>
             </div>
         </div>
 
-        <div class="project-card" data-categories="robotics ai">
-            <p><a href="#">Talos Robotics</a> is a vision-based tracking platform for robotic arm control using vision transformers for real-time object detection and pose estimation. Built ROS/Gazebo simulation with React telemetry interface.</p>
-            <div class="tech-tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">ROS</span>
-                <span class="tag">Gazebo</span>
-                <span class="tag">React</span>
+        <p class="section-subtitle">Web3 &amp; Finance</p>
+        <div class="archive-list">
+            <div class="archive-item">
+                <strong>Algorithmic Trading Platform</strong> &mdash; HFT strategy builder with backtesting engine processing 10M+ historical trades at sub-second simulation times.
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Web3.py</span>
+                </div>
+            </div>
+            <div class="archive-item">
+                <strong>DeFi Smart Contracts</strong> &mdash; Solidity contracts for automated trade execution and profit-sharing on Ethereum and BSC with $500K+ TVL.
+                <div class="tech-tags">
+                    <span class="tag">Solidity</span>
+                    <span class="tag">Ethereum</span>
+                    <span class="tag">BSC</span>
+                </div>
+            </div>
+            <div class="archive-item">
+                <strong>Real-Time Market Data</strong> &mdash; Aggregates prices from 20+ CEX/DEX sources, handling 50K events/second at &lt;10ms latency.
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Streaming</span>
+                </div>
             </div>
         </div>
-
-        <div class="project-card" data-categories="ai">
-            <p><a href="#">Deep Agent System</a> is a LangGraph-based agent framework with planning and long-term memory. Includes tool-use with function calling for web search, code execution, and document retrieval, evaluated across 500+ test scenarios.</p>
-            <div class="tech-tags">
-                <span class="tag">LangGraph</span>
-                <span class="tag">Claude API</span>
-                <span class="tag">Supabase</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="ai">
-            <p><a href="#">LLaMA From Scratch</a> is a from-scratch PyTorch implementation of LLaMA 2 with RMSNorm, rotary embeddings, and grouped-query attention. Achieves 3x memory efficiency with gradient checkpointing, plus KV caching and flash attention for inference.</p>
-            <div class="tech-tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">Transformers</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="ai">
-            <p><a href="#">LoRA/QLoRA Fine-tuning</a> enables parameter-efficient fine-tuning of LLaMA for domain-specific tasks, reducing compute 90%. QLoRA with 4-bit quantization runs 7B models on consumer GPUs (24GB VRAM).</p>
-            <div class="tech-tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">LoRA</span>
-                <span class="tag">Quantization</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="ai">
-            <p><a href="#">Vision-Language Pipeline</a> integrates VLMs for multi-modal understanding. OCR + LLM pipeline extracts structured data from 10K+ scanned forms at 95% accuracy. Fine-tuned CLIP embeddings improve retrieval 40%.</p>
-            <div class="tech-tags">
-                <span class="tag">CLIP</span>
-                <span class="tag">OCR</span>
-                <span class="tag">VLMs</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="ai hardware">
-            <p><a href="#">Agricultural RAG</a> is a retrieval-augmented generation pipeline fine-tuned on 100K agricultural documents, serving 5K+ queries/month at 92% accuracy with multi-step agent workflows for crop diagnostics.</p>
-            <div class="tech-tags">
-                <span class="tag">LLaMA</span>
-                <span class="tag">Ollama</span>
-                <span class="tag">LangChain</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="ai hardware">
-            <p><a href="#">RL Nutrient Controller</a> is a custom actor-critic reinforcement learning agent for nutrient dosing, achieving target EC/pH 60% faster than PID controllers, saving $2K per installation.</p>
-            <div class="tech-tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">RL</span>
-                <span class="tag">Embedded</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="web3 backend">
-            <p><a href="#">Algorithmic Trading Platform</a> enables users to design, configure, and backtest HFT strategies. Backtesting engine processes 10M+ historical trades with sub-second simulation times across multiple exchanges.</p>
-            <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Solidity</span>
-                <span class="tag">Web3.py</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="web3">
-            <p><a href="#">DeFi Smart Contracts</a> is a suite of Solidity contracts for automated trade execution and profit-sharing deployed on Ethereum and BSC with $500K+ TVL, integrated with Uniswap and PancakeSwap.</p>
-            <div class="tech-tags">
-                <span class="tag">Solidity</span>
-                <span class="tag">Ethereum</span>
-                <span class="tag">BSC</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="web3 backend">
-            <p><a href="#">Real-Time Market Data Pipeline</a> aggregates prices from 20+ CEX/DEX sources, handling 50K events/second at &lt;10ms latency for live trading decisions.</p>
-            <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Streaming</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="backend">
-            <p><a href="#">AdTech Platform</a> serves 100K ads/second at &lt;5ms p99 latency to 5M+ MAUs, with Aerospike cluster and cross-DC replication achieving 99.99% uptime. Increased CTR 25% and revenue $3M annually.</p>
-            <div class="tech-tags">
-                <span class="tag">Go</span>
-                <span class="tag">Aerospike</span>
-                <span class="tag">Kafka</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="backend ai">
-            <p><a href="#">ML Feature Store</a> reduces model inference latency 85% (50s to 6s) for real-time pricing decisions. Processes 500M events/month from 7M+ MAUs enabling 8% conversion rate improvement.</p>
-            <div class="tech-tags">
-                <span class="tag">BigQuery</span>
-                <span class="tag">Bigtable</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="hardware backend">
-            <p><a href="#">IoT Event Infrastructure</a> is an event-driven system handling 1K concurrent IoT connections at &lt;200ms p99 latency, with a data ingestion pipeline processing 600K sensor readings daily.</p>
-            <div class="tech-tags">
-                <span class="tag">Go</span>
-                <span class="tag">MQTT</span>
-                <span class="tag">InfluxDB</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="hardware">
-            <p><a href="#">Hardware Abstraction Layer</a> supports 15+ sensor types (UART/I2C/SPI) and industrial PLCs via Modbus RTU over RS485, reducing integration time 70% across deployments.</p>
-            <div class="tech-tags">
-                <span class="tag">Modbus</span>
-                <span class="tag">RS485</span>
-                <span class="tag">I2C/SPI</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="hardware">
-            <p><a href="#">Real-Time Control Systems</a> implements control loops with 10ms response time for irrigation and dosing at 99.9% uptime, using Kalman filtering for multi-sensor fusion to improve stability 3x.</p>
-            <div class="tech-tags">
-                <span class="tag">Go</span>
-                <span class="tag">Embedded</span>
-                <span class="tag">Kalman</span>
-            </div>
-        </div>
-
-        <div class="project-card" data-categories="backend">
-            <p><a href="#">Self-Service DevOps Platform</a> reduces provisioning time from 2 hours to 3 minutes for 20+ teams. Infrastructure as code with automated CI/CD pipelines.</p>
-            <div class="tech-tags">
-                <span class="tag">Terraform</span>
-                <span class="tag">GitHub Actions</span>
-            </div>
-        </div>
-    </section>
-
-    <script>
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const filter = btn.dataset.filter;
-            document.querySelectorAll('.project-card').forEach(card => {
-                if (filter === 'all' || card.dataset.categories.includes(filter)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-    </script>
-
-    <!-- Writing Section -->
-    <section class="writing">
-        <h2>writing</h2>
-        <p class="placeholder-text">Blog posts and technical writing coming soon...</p>
     </section>
 
 </body>
