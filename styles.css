@@ -26,12 +26,6 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
-.site-name {
-    min-height: 1.5rem;
-    margin-bottom: 3rem;
-    font-size: 0.75rem;
-}
-
 .organization {
     text-decoration: underline;
     text-underline-offset: 0.2em;
@@ -51,6 +45,10 @@ a:focus-visible {
     grid-template-columns: 4rem minmax(0, 1fr);
     gap: 1.25rem;
     margin-top: 3rem;
+}
+
+.timeline .timeline-entry:first-child {
+    margin-top: 0;
 }
 
 .timeline .timeline-entry + .timeline-entry {
